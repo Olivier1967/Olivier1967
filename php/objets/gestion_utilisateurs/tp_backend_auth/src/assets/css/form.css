@@ -1,0 +1,106 @@
+/* Colors from your code */
+:root {
+    --primary-color: #051D7A; /* Bleu cobalt */
+    --secondary-color: #07A5E2; /* Bleu clair */
+    --background-color: #ffffff; /* White */
+    --text-color: #333; /* Dark text */
+    --border-color: #cccccc; /* Light border */
+}
+
+/* General styles for the body */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Form styles */
+form {
+    background-color: var(--background-color); /* White background for the form */
+    border: 2px solid var(--primary-color); /* Bleu cobalt for form border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 60%; /* Match the table width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Label styles */
+label {
+    color: var(--primary-color); /* Bleu cobalt for text labels */
+    display: block; /* Ensure labels are block elements */
+    margin-top: 10px;
+}
+
+/* Input and select styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%; /* Full-width inputs */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color); /* Bleu clair for input borders */
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Focus state for inputs */
+input:focus,
+select:focus {
+    border-color: var(--primary-color); /* Highlight border with Bleu cobalt */
+    outline: none; /* Remove outline */
+}
+
+/* Summary text style */
+#summary {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FF0000; /* Red for warning text */
+    font-weight: bold;
+}
+
+/* Button styles */
+button,
+input[type="submit"],
+#btnmenu {
+    display: block;
+    width: 60%; /* Match the input width */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: var(--primary-color); /* Bleu cobalt for button background */
+    color: var(--background-color); /* White text on button */
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Button hover effects */
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0588c4; /* Darker blue on hover */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+#btnmenu:hover {
+    background-color: #0588c4; /* Darker blue on hover */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure consistent heading styling */
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--primary-color); /* Bleu cobalt */
+}

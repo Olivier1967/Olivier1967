@@ -1,0 +1,15 @@
+# image mysql
+FROM mysql:5.7
+
+# variables d'environnement
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=db_mini_faq
+ENV MYSQL_USER=olive
+ENV MYSQL_PASSWORD=1234
+
+
+# docker build -t darkb1967/exominifaqsql57 . 
+
+# docker run -d -p 3312:3306 -e MYSQL_ROOT_PASSWORD=root -v exominifaq_data:/var/lib/mysql --name exominifaqdbsql57 darkb1967/exominifaqsql57
+
+# docker exec -it exominifaqdbsql57 /bin/bash   ## entre dans le contenaire dans le bash

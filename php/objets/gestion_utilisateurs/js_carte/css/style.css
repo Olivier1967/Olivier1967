@@ -1,0 +1,50 @@
+:root {
+    --mainColor: white;
+    --secondaryColor: lightgrey;
+    --theadColor: darkgrey;
+    --textColor: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+thead tr th {
+    background-color: var(--theadColor);
+    border: 1px solid black;
+    
+}
+
+th, td {
+    padding: 8px 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: var(--secondaryColor);
+}
+
+tbody tr {
+    border-top: 1px solid black;
+}

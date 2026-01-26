@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="./js/headerFooter.js" defer></script>
+    <script src="./js/profil.js" type="module"></script>
+    <title>Profil</title>
+</head>
+<body>
+
+        <main id="home">
+
+            <h2>Profil utilisateurs :</h2>
+
+            <form action="post">
+            
+            <fieldset>
+                <legend>Rechercher</legend>
+                <label for="search">Rechercher par nom d'un utilisateur</label>
+                <input type="text" id="search">
+            </fieldset>
+
+            <div id="button" class="profilButton">
+            <button id="searchvalid" type="button">Rechercher</button>
+            </div>
+
+             <fieldset>
+                                
+                <legend> Utilisateurs <span id="fieldnumber"> 0</span></legend>
+
+                <label for="pfname">Nom :</label>
+                <input type="text" id="pfname">
+                <label for="plname">Prénom :</label>
+                <input type="text" id="plname">
+                <label for="email">Email :</label>
+                <input type="text" id="pemail">
+                <label for="prole">Role :</label>
+                <input type="text" id="prole">
+
+            </fieldset> 
+
+
+            </form>
+
+            <div id="button" class="profilButton">
+                <button id="decrement" type="button" value=0>Retour</button>
+                <button id="increment" type="button" value=0>Suivant</button>
+            </div>
+
+        </main>
+
+    <footer id="footer"></footer>    
+</body>
+</html>

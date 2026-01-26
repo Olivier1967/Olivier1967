@@ -1,0 +1,49 @@
+# Launch official Wordpress image served by Apache accompagnied by its a MySQL Server
+#
+# Save this file and launch service like this:
+# docker compose -p wp6-php8-my8 -f wp6-php8-my8.docker-compose.yaml up -d
+#
+# XXX NOT SUITABLE FOR PRODUCTION XXX
+
+x-config:
+  # Configure MySQL here, you may use environment variable instead of hardcoded values. Just sayin'
+  db-user: &db-user a-secret-user
+  db-password: &db-password a-super-duper-password
+  db-name: &db-name the-name-of-the-game
+  db-table-prefix: &db-table-prefix some_prefix_
+
+services:
+  my:
+    image: mysql:9.5.0-oraclelinux9
+    environment:
+      MYSQL_USER: *db-user
+      MYSQL_PASSWORD: *db-password
+      MYSQL_DATABASE: *db-name
+      MYSQL_ALLOW_EMPTY_PASSWORD: MYSQL_ALLOW_EMPTY_PASSWORD
+    healthcheck:
+      test: [ "CMD-SHELL", "mysqladmin ping" ]
+      interval: 30s
+      timeout: 2s
+      retries: 3
+    volumes:
+      - my:/var/lib/mysql:rw
+
+  wp:
+    image: wordpress:6.8.3-php8.1
+    environment:
+      WORDPRESS_DB_HOST: my
+      WORDPRESS_DB_USER: *db-user
+      WORDPRESS_DB_PASSWORD: *db-password
+      WORDPRESS_DB_NAME: *db-name
+      WORDPRESS_TABLE_PREFIX: *db-table-prefix
+    depends_on: # This may be a problem as WordPress won't be available if MySQL isn't
+      my:
+        condition: service_healthy
+    ports:
+      - "80:80"
+    volumes:
+      - www:/var/www/html:rw
+
+volumes:
+  my:
+  www:

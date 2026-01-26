@@ -1,0 +1,14 @@
+# image mariadb
+FROM mariadb:11.8.3
+
+# variables d'environnement
+ENV MARIADB_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=db_mini_faq
+ENV MARIADB_USER=user1
+ENV MARIADB_PASSWORD=1234
+
+EXPOSE 3306
+
+# docker build -t darkb1967/exo_mini_faq_maria11 . 
+
+# docker run -d -p 3315:3306 -v exo_mini_faq_data:/var/lib/mysql --name exo_mini_faq_maria11 darkb1967/exo_mini_faq_maria11

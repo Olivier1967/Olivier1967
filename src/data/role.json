@@ -1,0 +1,15 @@
+[
+    {   "Role":"Invité",
+        "Description":["sidentifier", "créer un compte si code", "réinitialiser mot de passe"]
+    },
+    {   "Role":"Usager",
+        "Description":["consulter son profil", "modifier son profil", "parcourir la liste des utilisateurs","se déconnecter"]
+    },
+    {   "Role":"Encadrant",
+        "Description":["usager avec privilèges accrus", "consulter profils usagers et encadrants", "modifie infos usagers sauf rôle et mot de passe"]
+    },
+    {   "Role":"Administrateur",
+        "Description":["encadrant avec privilèges accrus", "consulte profil tous utilisateurs", "modifie infos tous utilisateurs enregistré","ajoute utilisateur sans code inscription","supprimer un utilisateur"]
+    }
+
+]

@@ -1,0 +1,14 @@
+{
+    "name": "obanor/fplanets",
+    "description": "fetch planets",
+    "type": "project",
+    "license": "gnu",
+    "authors": [
+        {
+            "name": "ob"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.10"
+    }
+}

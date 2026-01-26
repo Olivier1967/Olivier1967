@@ -1,0 +1,28 @@
+[
+    {   "Nom":"Jackson",
+        "Prenom":"makkenzie",
+        "Email":"makkenzie@gmail.com",
+        "Role":"invite"
+    },
+    {    "Nom":"Goya",
+        "Prenom":"Chantal",
+        "Email":"Chantalgoay@free.com",
+        "Role":"usager"
+    },
+    {    "Nom":"Gouyya",
+        "Prenom":"Chantal",
+        "Email":"Chantalgoay@free.com",
+        "Role":"usager"
+    },
+    {    "Nom":"Pivot",
+        "Prenom":"Bernard",
+        "Email":"pbernard@hotmail.com",
+        "Role":"consultant"
+    },
+    {    "Nom":"Gate",
+        "Prenom":"Bill",
+        "Email":"billgate@laposte.fr",
+        "Role":"Administrateur"
+    }
+
+]

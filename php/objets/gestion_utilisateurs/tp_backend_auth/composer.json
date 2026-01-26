@@ -1,0 +1,13 @@
+{
+    "name": "dark1967/festival",
+    "description": "test",
+    "type": "project",
+    "require": {
+        "michelf/php-markdown": "2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    }
+}

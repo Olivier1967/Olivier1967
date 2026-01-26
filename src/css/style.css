@@ -1,0 +1,205 @@
+/*
+Gérer des utilisateurs dans une application Web
+
+@author: Banor Olivier
+@version: 1.0
+@date: 2025-08-04
+@description: Code CSS pour la gestion des utilisateurs.
+*/
+* {box-sizing: border-box;}
+
+html {
+   font-size: 62.5%; /* 10px */
+   
+}
+
+:root {
+    --light: white;
+    --dark: black;
+    --crm-primary: #6D5A65; 
+    --crm-secondary: #95818D;
+    --crm-title-header: #2A504B;
+    --crm-h1: #122932;
+    --crm-buttona-over: #488287;
+}
+
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   /* Vous pouvez modifier la police */
+    font-size: medium;
+    background-color: var(--crm-primary);   /* Vous pouvez changer la couleur de fond */
+    color: var(--light);   /* Vous pouvez changer la couleur du texte */
+}
+
+main{
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Position du navbar container a l'interieur de image */
+.container {
+    margin-top: 0;
+     margin-bottom: 1rem;
+     width: 100%;
+}
+
+h1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--crm-h1);
+    font-size: 30px;
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #2A504B;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: var(--crm-secondary);
+  color: var(--dark);
+}
+
+/* image crm navbar */
+img {
+    width: 15rem;
+
+}
+
+h2{
+    text-align: center;
+    font-size: medium;
+}  
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #aecadf;
+}
+
+#mytable{
+        margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+footer {
+    position: fixed;
+  font-size: 15px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--crm-title-header);
+  color: var(--light);
+  text-align: center;
+  padding: 5px;
+}
+
+.btn-primary a{
+        margin-left: 80%;
+        color: var(--light);
+        /*text-align: right;*/
+}
+
+.btn-primary a:hover{ color: var(--crm-buttona-over);}
+
+
+/* formulaire */
+form{
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: var(--crm-title-header);*/
+    width: 60%;
+}
+
+fieldset{
+    display: flex;
+    background-color: var(--crm-title-header);
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+label, input {
+flex-basis: 40%;
+height: 30px;
+
+}
+
+select{
+    width: 40%;
+}
+
+#check input[type="checkbox"] {
+    flex-basis: 20%;
+    width: 5%;
+}
+
+#check label {
+    flex-basis: 45%;
+}
+
+#button{
+    margin-top: 2rem;
+    margin-left: 30%;
+    gap: 8rem;
+}
+
+#btnsup {
+    margin-left: 40%;
+}
+
+#effacerliste{
+     margin-left: 40%;
+
+}
+
+#decrement{
+    margin-left: 10%;
+}
+
+#searchvalid{
+    margin-left: 20%;
+}
+
+#result{
+        margin-left: 20%;
+}
+button{
+    display: inline-block;
+    background-color: var(--crm-title-header);
+    color: white;
+    width: 20%;
+    height: 3rem;
+
+}
+
+
+:invalid {
+    border: 1px solid red
+}
+
+:valid {
+    border: 1px solid green
+}

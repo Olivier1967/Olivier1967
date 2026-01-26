@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="./js/headerFooter.js" defer></script>
+    <script src="./js/adroles.js" type="module"></script>
+    <title>Ajout de roles</title>
+</head>
+<body>           
+
+        <main id="home">
+
+            <h2>Ajouter un role :</h2>
+            <section class="form">
+                
+                <form id="formut" action="" method="">
+                    <fieldset>
+                        <legend>Ajout de role</legend>
+                        <label for="nrole">Inscrivez un role</label>
+                        <input type="text" id="nrole">
+                        <label for="descrip">Ajouter une description</label>
+                        <input type="text" id="descrip">
+
+                    </fieldset> 
+                    
+                    <div id="button">
+                    <button id="afficherliste" type="button">Afficher liste</button>
+                    <button id="ajouterRole" type="submit" >Ajouter</button>
+                    </div>
+
+                </form>
+
+
+            </section>
+
+            <div id="result"></div>
+        </main>
+
+    <footer id="footer"></footer>    
+</body>
+</html>

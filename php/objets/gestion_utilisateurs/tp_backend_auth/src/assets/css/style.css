@@ -1,0 +1,125 @@
+/* Styles généraux pour le tableau */
+        .styled-table {
+            border-collapse: separate; /* Important pour les coins arrondis */
+            border-spacing: 0;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px; /* Coins arrondis pour l'ensemble du tableau */
+            overflow: hidden; /* Assure que le contenu ne dépasse pas les coins arrondis */
+        }
+
+        /* Style de l'en-tête (ligne titre) */
+        .styled-table thead tr {
+            background-color: #051D7A; /* Bleu cobalt */
+            color: #ffffff; /* Texte blanc */
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* Style des cellules de l'en-tête */
+        .styled-table th {
+            padding: 12px 15px;
+        }
+
+        /* Styles pour les coins arrondis spécifiques de l'en-tête */
+        .styled-table th:first-child {
+            border-top-left-radius: 10px;
+        }
+        .styled-table th:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        /* Style des lignes du corps du tableau */
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd; /* Ligne de séparation légère */
+        }
+
+        /* Couleur de fond alternée (bleu clair et blanc) */
+        .styled-table tbody tr:nth-of-type(odd) {
+            background-color: #87c0e3; /* Bleu clair */
+            color: #ffffff; /* Texte blanc pour la ligne bleue */
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #ffffff; /* Blanc */
+            color: #333333; /* Texte sombre pour la ligne blanche */
+        }
+
+        /* Style de la dernière ligne (séparateur) */
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #051D7A; /* Surligner la fin du tableau */
+        }
+        
+        /* Style des cellules du corps du tableau */
+        .styled-table td {width:auto;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        .styled-table td:last-child {width:100px;
+        
+        }
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            color: #051D7A;
+        }
+:root {
+    --primary-color: #051D7A; /* Bleu clair */
+    --background-color: #ffffff; /* Blanc */
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+
+
+input[type="button"] {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--primary-color); /* Bleu clair */
+    color: var(--background-color); /* Texte blanc */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; border-radius: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #0588c4; /* Un bleu légèrement plus foncé au survol */
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 15px;
+    background-color: var(--primary-color); /* Bleu clair */
+    color: var(--background-color); /* Texte blanc */
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease; border-radius: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #0588c4; /* Un bleu légèrement plus foncé au survol */
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+#error, #message{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: brown;
+}

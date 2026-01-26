@@ -1,0 +1,16 @@
+# Image de base
+FROM mariadb:11.8.3
+
+# Mot de passe ROOT du serveur de base de données
+ENV MARIADB_ROOT_PASSWORD=root
+# Nom de la base de données qui sera créée au 1er démarrage du conteneur
+ENV MARIADB_DATABASE=db_fournisseurs
+# Nom d'utilisateur pour se connecter à la base de données
+ENV MARIADB_USER=olive
+# Mot de passe pour se connecter à la base de données
+ENV MARIADB_PASSWORD=1234
+
+
+# docker build -t darkb1967/db-exo-fournisseurs . 
+
+# docker run -d -p 3311:3306 -v exo-fournisseurs-data:/var/lib/mysql --name exo-fournisseurs-database darkb1967/db-exo-fournisseurs

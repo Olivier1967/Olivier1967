@@ -1,0 +1,82 @@
+/* Couleurs définies */
+/* Texte vert bouteille : #006D44 */
+/* Filet input et bouton vert intense : #00915A */
+/* Fond champ lecture seule : #1E9481 */
+/* Fond de page : blanc */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fond de page en blanc */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #00915A; /* Bordure du fieldset en Vert intense */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    color: #006D44; /* Titre fieldset en Vert bouteille */
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #006D44; /* Texte des labels en Vert bouteille */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #00915A; /* Filet (bordure) en Vert intense */
+    border-radius: 4px;
+}
+
+input:focus,
+button:focus {
+    border-color: #006D44; /* Bordure au focus en Vert bouteille */
+    outline: none;
+}
+
+button {
+    background-color: #00915A; /* Fond du bouton en Vert intense */
+    color: white; /* Texte du bouton en blanc */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: #006D44; /* Changement de couleur au survol */
+}
+
+input[readonly] {
+    background-color: #c2efe8; /* Fond spécifique pour l'input en lecture seule */
+    color: white; /* Texte en blanc pour un bon contraste sur le fond coloré */
+    font-weight: bold;
+}
+input[readonly]:focus {
+    border:3px solid  #00915A;
+
+}

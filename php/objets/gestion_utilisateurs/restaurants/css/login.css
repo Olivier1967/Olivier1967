@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #71a3ac; /* Background color for both forms */
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white; /* Text color */
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0; /* Space between the input fields */
+}
+
+.input-field {
+    width: 100%; /* Ensure the input field takes full width */
+}
+
+.input-field input {
+    width: 100%; 
+    height: 50px; /* Increased height for better usability */
+    background: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Slightly translucent border */
+    border-radius: 40px; /* Ensures rounded corners */
+    font-size: 16px;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for better spacing in the input */
+    transition: all 0.3s ease; /* Smooth focus transition */
+}
+
+.input-field input::placeholder {
+    color: white; /* Change placeholder text to white for visibility */
+}
+
+.input-field input:focus {
+    border-color: #fff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle highlight effect */
+    outline: none; /* Remove default outline */
+}
+
+.input-field i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white; /* Icon color */
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px; /* Consistent button height */
+    background: white; /* Button background */
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; /* Button text color */
+    font-weight: 600;
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.wrapper .btn:hover {
+    background: rgba(65, 114, 107, 0.486); /* Darken background on hover */
+    color: #cdd3d4; /* Button text color */
+}
+
+.wrapper .bottom {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bottom span {
+    font-size: 14.5px;
+}
+
+.btn-l {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline by default */
+    font-weight: 600;
+}
+
+.btn-l:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.alert {
+    text-align: center; /* Style alert messages */
+    margin: 15px 0;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    color: aliceblue;
+}

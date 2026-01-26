@@ -1,0 +1,19 @@
+/* style.css */
+
+body {
+    background-color: #546a77; /* Match existing theme */
+}
+
+form {
+    margin: 0 auto; /* Center the form */
+    max-width: 600px; /* Limit the max width of the form */
+}
+
+.btn-primary {
+    background-color: #68a; /* Custom button color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #5f9eac; /* Shade for hover effect */
+}

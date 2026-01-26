@@ -1,0 +1,14 @@
+# image mariadb
+FROM mariadb:11.8.3
+
+# variables d'environnement
+ENV MARIADB_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=db_rezo_social
+ENV MARIADB_USER=user1
+ENV MARIADB_PASSWORD=1234
+
+EXPOSE 3306
+
+# docker build -t darkb1967/exo_rezo_social_maria11 . 
+
+# docker run -d -p 3316:3306 -v rezo_social_maria11_data:/var/lib/mysql --name connect_root_maria11 darkb1967/exo_rezo_social_maria11

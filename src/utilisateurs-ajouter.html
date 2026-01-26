@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="./js/headerFooter.js" defer></script>
+    <script src="./js/addutil.js" type="module"></script>
+    <title>Ajout Utilisateurs</title>
+</head>
+<body>  
+
+    <main id="home">
+
+        <form id="addutils">
+             <fieldset>
+                <legend>Ajout Utilisateurs</legend>
+
+                <label for="ufname">Nom *</label>
+                <input type="text" id="ufname" pattern="^[A-Za-z]{3,}$" title="le nom doit composer 3 lettres au minimum" required><span id="ufname-error" style="color:red;"></span>
+                <label for="lname">Prénom *</label>
+                <input type="text" id="ulname" pattern="^[A-Za-z]{3,}$" title="le prénom doit composer 3 lettres au minimum" required>
+                <label for="uemail">Email *</label>
+                <input type="email" id="uemail" pattern="^[\w\.-]+@[\w]+\.[a-z]+$" title="l'email doit se composer monemail@adresse.fr" required>
+
+            </fieldset> 
+            
+            <fieldset>
+                <legend>Ajout de Role</legend>
+                <label for="urole">Role *</label>
+                <select name="urole" id="urole" required>
+                    <option value=""> -- Sélectionnez un role --</option>
+                    <option value="inviter">Invité</option>
+                    <option value="usager">Usager</option>
+                    <option value="encadrant">Encadrant</option>
+                    <option value="administrateur">Administrateur</option>
+                </select>
+            </fieldset>
+
+        <div id="button">
+            <button id="addUtils" type="submit">Ajouter</button>
+            <button id="delUtil" type="button" onclick="delUtil()">Supprimer</button>
+            <button id="reset" type="reset" >Reset</button>
+        </div>
+
+        </form>
+
+            
+            <div id="result"></div>
+
+
+        </main>
+
+    <footer id="footer"></footer>    
+</body>
+</html>

@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "nom": "Le Coin des Saveurs",
+        "adresse": "12 Avenue des Lilas, 68100 Mulhouse",
+        "prix": "32.90",
+        "commentaire": "Cuisine française généreuse, service impeccable et cadre chaleureux.",
+        "note": 5,
+        "date visite": "12\/04\/2021"
+    },
+    {
+        "id": 2,
+        "nom": "Chez Marcelin",
+        "adresse": "78 Rue de Belfort, 68200 Mulhouse",
+        "prix": "42.00",
+        "commentaire": "Ambiance familiale, produits locaux et plats du terroir revisités.",
+        "note": 5,
+        "date visite": "27\/02\/2022"
+    },
+    {
+        "id": 3,
+        "nom": "L'âtre des Amis",
+        "adresse": "45 Boulevard de la République, 68000 Colmar",
+        "prix": "27.50",
+        "commentaire": "Bonne adresse pour les repas conviviaux, spécialités alsaciennes excellentes.",
+        "note": 9,
+        "date visite": "15\/07\/2020"
+    },
+    {
+        "id": 4,
+        "nom": "Bistro du Clocher",
+        "adresse": "3 Place du Clocher, 68240 Kaysersberg",
+        "prix": "35.20",
+        "commentaire": "Petit bistrot charmant, carte variée mais service parfois lent.",
+        "note": 4,
+        "date visite": "02\/10\/2021"
+    },
+    {
+        "id": 5,
+        "nom": "La Table Étoilée",
+        "adresse": "21 Rue des Étoiles, 68130 Altkirch",
+        "prix": "60.10",
+        "commentaire": "Expérience gastronomique raffinée, chef créatif et carte renouvelée.",
+        "note": 10,
+        "date visite": "05\/12\/2022"
+    },
+    {
+        "id": 6,
+        "nom": "Maison de Lumière",
+        "adresse": "9 Chemin du Canal, 68870 Bartenheim",
+        "prix": "25.80",
+        "commentaire": "Un décor moderne et lumineux, plats simples mais savoureux.",
+        "note": 6,
+        "date visite": "19\/08\/2021"
+    },
+    {
+        "id": 7,
+        "nom": "Café des Rosiers",
+        "adresse": "15 Rue des Rosiers, 68300 Saint-Louis",
+        "prix": "19.60",
+        "commentaire": "Petit déjeuner copieux, pâtisseries maison et terrasse agréable.",
+        "note": 8,
+        "date visite": "11\/03\/2021"
+    },
+    {
+        "id": 8,
+        "nom": "Chez Bastien",
+        "adresse": "66 Route de Strasbourg, 67210 Obernai",
+        "prix": "53.25",
+        "commentaire": "Les poissons y sont cuisinés à la perfection, service attentionné.",
+        "note": 9,
+        "date visite": "21\/11\/2019"
+    },
+    {
+        "id": 9,
+        "nom": "Le Relais d'Azur",
+        "adresse": "2 Allée de la Plage, 68128 Village-Neuf",
+        "prix": "38.80",
+        "commentaire": "Fruits de mer frais, belle vue et ambiance détendue.",
+        "note": 5,
+        "date visite": "30\/06\/2021"
+    },
+    {
+        "id": 10,
+        "nom": "Balcon de Montmartre",
+        "adresse": "17 Rue du Balcon, 75018 Paris",
+        "prix": "49.99",
+        "commentaire": "Restaurant romantique avec vue exceptionnelle, cuisine fine et inventive.",
+        "note": 7,
+        "date visite": "14\/05\/2022"
+    },
+    {
+        "id": 11,
+        "nom": "chez olivier",
+        "adresse": "rue de la mertzau, 68100",
+        "prix": "45.00",
+        "commentaire": "cuisine réunionnaise de qualité, bonne quantité",
+        "note": 8,
+        "date visite": "04\/11\/2025"
+    }
+]
