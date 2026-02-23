@@ -26,8 +26,10 @@ $data = null;
 if ($_SERVER["REQUEST_METHOD"] === "POST" && !empty($_POST['recherche'])) { 
     $recherche = urlencode(filter_var($_POST['recherche']));
     $url = 'https://api.le-systeme-solaire.net/rest/bodies/' . $recherche;
+    $url2 = 'https://api.le-systeme-solaire.net/rest/bodies/';
 
     $file = file_get_contents($url, false, $context);
+    $file2 = file_get_contents($url2, false, $context);
 
     if ($file === false) {
         $error = "Erreur de retrait de données.";
@@ -66,7 +68,24 @@ header('Content-Type: text/html; charset=utf-8');
                 echo "<p>Orbit sidéral: " . htmlspecialchars($data['sideralOrbit']) . "</p>";
                 echo "<p>Periheli: " . htmlspecialchars($data['perihelion']) . "</p>";
                 echo "<p>Apheli: " . htmlspecialchars($data['aphelion']) . "</p>";
+                //echo "<p>Lunes: " . htmlspecialchars($data['moons']) . "</p>";
+                
+                // Check if moons exists and is an array
+                if (isset($data['moons']) && is_array($data['moons'])) {
+                    $moonList = [];
+                    foreach ($data['moons'] as $moon) {
+                        // Extracting moon name and its relation if they exist
+                        $moonName = htmlspecialchars($moon['moon'] ?? 'Unknown Moon');
+                        //$moonRel = htmlspecialchars($moon['rel'] ?? 'Unknown Relation');
+                        //$moonList[] = "$moonName (Relation: $moonRel)";
+                        $moonList[] = "$moonName";
+                    }
+                    echo "<p>Lunes: " . implode(', ', $moonList) . "</p>";
+                } else {
+                    echo "<p>Lunes: Donnés sur les lunes non disponible.</p>";
+                }
             }
+                //echo "fichier = ", $file2;
             ?>
         </div>
     </main>

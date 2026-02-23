@@ -80,7 +80,8 @@ $key = require ($keyFile);
     $sanitizedData = preg_replace('/[\x00-\x1F\x7F]/', '', $responseBody);
 
     // Decode the sanitized JSON
-    $result = json_decode($sanitizedData, true);
+    //$result = json_decode($sanitizedData, true);
+    $result = json_decode($responseBody, true);
 
     // Check for JSON errors
     if (json_last_error() !== JSON_ERROR_NONE) {
